@@ -1,0 +1,251 @@
+SPECID,TYPE,COMMENT,SIMBAD NOTES,REFERENCES OUTSIDE GAMA
+G02_Y5_083_265,BLEND,M dwarf in front of Galaxy,-,0
+G09_Y1_AX2_002,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G12_Y1_DS2_320,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G15_Y1_BS2_010,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G15_Y2_003_165,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G15_Y2_013_324,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G15_Y3_021_053,BLEND,M dwarf in front of Galaxy,Galaxy,0
+G09_Y5_018_163,BLEND,Maybe O star in front of Galaxy,Emission-line galaxy,2
+G09_Y1_HS1_004,BLEND,"Tiny galaxy in front of big one, questionable Ha source",Galaxy,0
+G02_Y4_042_264,BPT,Also blend,Galaxy in Group,7
+G09_Y1_CN1_168,BPT,Emission lines and diagonal continuum,Galaxy,6
+G02_Y3_018_304,BPT,High and many emission lines,Galaxy,0
+G02_Y5_061_198,BPT,High and many emission lines,-,0
+G09_Y4_231_266,BPT,High and many emission lines,-,0
+G12_Y1_AN1_124,BPT,High and many emission lines,Galaxy,0
+G12_Y1_AN1_254,BPT,High and many emission lines,Galaxy,0
+G12_Y1_BS1_058,BPT,High and many emission lines,Galaxy,0
+G12_Y1_CN1_079,BPT,High and many emission lines,HII Galaxy,36
+G12_Y1_IS1_078,BPT,High and many emission lines,-,0
+G12_Y1_IS2_123,BPT,High and many emission lines,Galaxy,7
+G12_Y6_050_014,BPT,High and many emission lines,Seyfert 1,143
+G15_Y1_GN1_001,BPT,High and many emission lines,Galaxy,0
+G15_Y3_016_128,BPT,High and many emission lines,Galaxy,0
+G15_Y4_205_288,BPT,High and many emission lines,-,0
+G15_Y4_234_172,BPT,High and many emission lines,-,0
+G15_Y6_088_244,BPT,High and many emission lines,Galaxy,0
+G15_Y6_089_265,BPT,High and many emission lines,Galaxy,0
+G15_Y3_047_035,BPT,High and many emission lines and bad splice,-,0
+G12_Y1_AS2_119,BPT,High and many emission lines and fringing,Galaxy,0
+G09_Y4_207_339,BPT,High emission lines,-,0
+G09_Y4_207_347,BPT,High emission lines,-,0
+G09_Y1_DX1_117,BPT,High emission lines and blue,Galaxy,5
+G09_Y4_207_378,BPT,High emission lines for a pretty normal continuum,-,0
+G09_Y4_207_303,BPT,NII High,-,0
+G15_Y3_009_097,BPT,Very extreme,Galaxy,0
+G02_Y4_002_108,BPT,,-,0
+G12_Y1_ND8_039,BPT,,Galaxy,0
+G15_Y1_CX1_053,BPT,,Galaxy,0
+G09_Y1_FS1_085,BROADENED,Broadening of emission lines,Galaxy,0
+G15_Y2_007_169,BROADENED,Broadening of emission lines,-,0
+G12_Y1_BX1_127,BROADENED,Complex and high NII,Galaxy,0
+G02_Y3_015_210,BROADENED,Emission line broadening,-,0
+G09_Y4_212_273,BROADENED,Emission line broadening,-,0
+G12_Y1_IS1_080,BROADENED,Emission line broadening,Galaxy,0
+G12_Y1_DS2_080,BROADENED,"Emission line broadening, Ae volgens comments",Active Galactic Nucleus,6
+G15_Y4_206_189,BROADENED,Ha and NII bit structure,-,0
+G09_Y6_063_013,BROADENED,Slight broadening of lines,-,0
+G09_Y1_IS2_022,CONTINUUM,Blue galaxy,Galaxy,0
+G15_Y1_DS2_125,CONTINUUM,Blue galaxy,Galaxy,0
+G15_Y4_211_119,CONTINUUM,Blue galaxy,-,0
+G12_Y1_BD1_108,CONTINUUM,Blue galaxy ,Galaxy,0
+G15_Y1_CS1_071,CONTINUUM,Blue galaxy ,-,0
+G15_Y1_DS2_102,CONTINUUM,Blue galaxy ,Galaxy,0
+G02_Y4_043_333,CONTINUUM,Diagonal blue end with sky lines in red,-,0
+G09_Y4_211_013,CONTINUUM,Diagonal red,-,0
+G09_Y5_015_117,CONTINUUM,Diagonal red,Galaxy,2
+G12_Y1_DS2_367,CONTINUUM,Diagonal red,Galaxy,0
+G02_Y3_018_233,CONTINUUM,"Diagonal Red, no emission lines strong NaID",-,0
+G09_Y4_207_387,CONTINUUM,"Diagonal Red, no emission lines strong NaID",-,0
+G12_Y4_205_395,CONTINUUM,Diagonal up to 7000A and then flat,-,0
+G02_Y4_043_265,CONTINUUM,High blue end,-,0
+G09_Y4_215_246,CONTINUUM,High blue end,-,0
+G15_Y1_DS2_097,CONTINUUM,High blue end,Galaxy,0
+G15_Y1_DS2_106,CONTINUUM,High blue end,Galaxy,0
+G15_Y1_DS2_123,CONTINUUM,High blue end,Galaxy,0
+G15_Y1_DS2_124,CONTINUUM,High blue end,Galaxy,0
+G15_Y4_202_230,CONTINUUM,High blue end,-,0
+G15_Y4_202_266,CONTINUUM,High blue end,-,0
+G15_Y4_202_314,CONTINUUM,High blue end,Galaxy,0
+G15_Y4_204_220,CONTINUUM,High blue end,-,0
+G15_Y6_074_314,CONTINUUM,High blue end,Galaxy,0
+G15_Y6_088_239,CONTINUUM,High blue end,Galaxy,0
+G15_Y4_237_091,CONTINUUM,Mountain shape,-,0
+G09_Y1_DS2_261,CONTINUUM,Noisy blue end,Galaxy,0
+G15_Y4_204_386,CONTINUUM,Noisy blue end,-,0
+G15_Y4_204_396,CONTINUUM,Noisy blue end,-,0
+G02_Y3_019_369,CONTINUUM,Valley shape,Radio Galaxy,2
+G09_Y4_212_315,CONTINUUM,Valley shape,-,0
+G09_Y4_212_321,CONTINUUM,Valley shape,-,0
+G15_Y6_082_045,CONTINUUM,Very weird feature,Galaxy,0
+G09_Y4_215_048,E+A,Balmer absorption,-,0
+G09_Y4_215_057,E+A,"Balmer absorption, no Ha",-,0
+G12_Y1_AN1_085,E+A,"Balmer absorption, no Ha",Galaxy,0
+G12_Y1_CS1_087,E+A,Bit of absorption in Hd,Galaxy,1
+G12_Y2_041_076,E+A,"Bit of balmer absorption, no emission",Galaxy,0
+G15_Y4_210_008,E+A,Deep Hd absorption and Ha emission,-,0
+G09_Y1_FN2_235,E+A,Extreme Balmer absorption,Galaxy,0
+G12_Y1_CN1_175,E+A,"Strong Balmer absorption, strong Ha and NII emission",Galaxy,0
+G09_Y4_240_259,LINES,Dominating NII,Galaxy,0
+G02_Y3_013_192,LINES,"Dominating NII, no Ha",Galaxy,2
+G09_Y1_CN2_290,LINES,High emission lines and Iron lines,Galaxy,0
+G02_Y3_016_160,LINES,Low Ha and no Oxygen ,X-ray source,2
+G12_Y1_GND1_125,LINES,Mysterious emission line at 5435,Galaxy,0
+G12_Y1_HND1_169,LINES,NII 5200 source and high emission lines,Galaxy,0
+G02_Y3_014_029,LINES,NII much bigger than Ha,Galaxy,0
+G09_Y2_016_087,LINES,Only HA and high NII,Galaxy,0
+G12_Y1_CX1_394,LINES,Only HA and high NII,Galaxy,0
+G12_Y1_DS2_363,LINES,Only HA and high NII,Galaxy,0
+G12_Y6_052_104,LINES,Only HA and high NII,Galaxy,0
+G15_Y1_FS2_063,LINES,Only HA and high NII,Galaxy,0
+G15_Y4_204_298,LINES,Only HA and high NII,-,0
+G09_Y4_207_090,LINES,"Only Ha and high NII, also second structure?",-,0
+G09_Y6_093_017,LINES,"Only Ha and high NII, weird continuum",Emission-line galaxy,22
+G09_Y4_207_260,LINES,"Only Ha, high NII and SII, no O at all",-,0
+G15_Y1_CS2_180,LINES,Single iron 5304 line ,Galaxy,0
+G02_Y5_080_045,QSO,Additional structure at Balmer lines,-,0
+G12_Y1_BN1_366,QSO,Additional structure at Balmer lines,Galaxy,0
+G15_Y1_BN2_004,QSO,Additional structure at Balmer lines,Seyfert 1,13
+G15_Y6_093_351,QSO,Additional structure at Balmer lines,Galaxy,0
+G09_Y6_090_043,QSO,Additional structure at Hb and broad MgII,Galaxy,0
+G02_Y3_005_005,QSO,Broadened Balmer lines,Seyfert 1,11
+G02_Y3_015_281,QSO,Broadened Balmer lines,-,0
+G02_Y5_094_233,QSO,Broadened Balmer lines,Quasar,6
+G02_Y5_111_257,QSO,Broadened Balmer lines,Quasar,8
+G09_Y1_BS1_152,QSO,Broadened Balmer lines,Galaxy,0
+G09_Y4_208_024,QSO,Broadened Balmer lines,-,0
+G12_Y6_040_320,QSO,Broadened Balmer lines,Seyfert 1,30
+G15_Y1_FN2_029,QSO,Broadened Balmer lines,Galaxy,0
+G15_Y1_GN1_046,QSO,Broadened Balmer lines,Galaxy,0
+G15_Y4_236_287,QSO,Broadened Balmer lines,Seyfert 1,8
+G15_Y5_003_263,QSO,Broadened Balmer lines,Star,1
+G15_Y5_029_255,QSO,Broadened Balmer lines,-,0
+G15_Y5_061_182,QSO,Broadened Balmer lines,Seyfert 1,6
+G15_Y6_088_158,QSO,Broadened Balmer lines,Seyfert 1,11
+G15_Y6_100_268,QSO,Broadened Ha,Quasar,4
+G09_Y3_015_229,QSO,Broadened Hb,Sub-millimetric source,1
+G09_Y1_DS2_065,QSO,Extra complex structure around Balmer lines,Galaxy,0
+G12_Y1_FN1_127,QSO,Extra complex structure around Balmer lines,Galaxy,0
+G12_Y1_IS2_153,QSO,Extra structure at Balmer lines,Seyfert 1,32
+G09_Y4_215_016,QSO,Extremely broadened Balmer lines,Quasar,1
+G12_Y1_AT_117,QSO,Extremely broadened Balmer lines and fringing,Seyfert 1,20
+G09_Y4_249_125,QSO,Extremely broadened Ha,Galaxy,0
+G15_Y6_083_065,QSO,High redshift quasar: CIII and extra structure,-,0
+G09_Y3_015_281,QSO,High redshift quasar: CIII and MgII,Galaxy,0
+G12_Y3_006_046,QSO,High redshift quasar: CIII and MgII,Star,1
+G09_Y2_017_284,QSO,"High redshift quasar: CIII and MgII, AeB ",Galaxy,0
+G15_Y4_212_020,QSO,High redshift quasar: CIV high and sharp,-,0
+G15_Y5_035_226,QSO,High redshift quasar: CIV high and sharp,Star,1
+G15_Y6_094_029,QSO,High redshift quasar: CIV high and sharp,-,0
+G09_Y4_226_135,QSO,High redshift quasar: Lyman alpha and broad C,-,0
+G12_Y6_073_125,QSO,High redshift quasar: Lyman alpha and Sil,-,0
+G09_Y4_201_018,QSO,High redshift quasar: Lyman alpha emitter,-,0
+G09_Y4_212_196,QSO,High redshift quasar: Lyman alpha emitter,-,0
+G15_Y6_086_131,QSO,High redshift quasar: Lyman alpha emitter,-,0
+G15_Y4_203_235,QSO,High redshift quasar: Lyman gamma emitter,-,0
+G15_Y5_021_245,QSO,High redshift quasar: Lyman gamma emitter,-,0
+G15_Y2_009_099,REDUCTION,Blue end of spectrum diagonal,-,0
+G12_Y1_HS2_140,REDUCTION,Dominating spurious line,Galaxy,0
+G12_Y1_CND1_092,REDUCTION,Noisy continuum,Galaxy,0
+G15_Y2_020_394,REDUCTION,Reduction error with sky line 5578,Galaxy,0
+G15_Y4_215_093,REDUCTION,Sky absorption at 5578,-,0
+G15_Y6_081_395,REDUCTION,Sky absorption at 5578,Galaxy,0
+G02_Y5_079_376,REDUCTION,Sky lines not reduced correctly,-,0
+G12_Y1_AS2_129,REDUCTION,Sky lines not reduced correctly,Galaxy,0
+G12_Y1_GS1_117,REDUCTION,Sky lines not reduced correctly,-,0
+G15_Y2_008_251,REDUCTION,Sky lines not reduced correctly,Galaxy,0
+G15_Y4_207_028,REDUCTION,Spectral arms peak at splice,-,0
+G09_Y1_AN1_378,REDUCTION,Very dominant sky absorption,Galaxy,0
+G09_Y1_AX2_247,REDUCTION,Very dominant sky absorption,Galaxy,0
+G09_Y1_CN1_233,REDUCTION,Very dominant sky absorption,Galaxy,0
+G15_Y1_BS2_216,REDUCTION,Very dominant sky absorption,Galaxy,0
+G02_Y5_060_294,REDUCTION,Weird absorption feature (all fibre 294?),Galaxy,0
+G15_Y2_009_294,REDUCTION,Weird absorption feature (all fibre 294?),Galaxy,0
+G15_Y2_020_294,REDUCTION,Weird absorption feature (all fibre 294?),Galaxy,0
+G15_Y3_051_294,REDUCTION,Weird absorption feature (all fibre 294?),-,0
+G15_Y2_013_055,SF,Also bad splice,Galaxy,0
+G02_Y5_091_065,SF,Also blend,-,0
+G02_Y4_034_330,SF,Also noisy continuum,-,0
+G15_Y4_203_262,SF,Blue with emission lines,-,0
+G15_Y6_097_155,SF,Different BPT,Galaxy,0
+G09_Y1_CX2_244,SF,Emission lines,Galaxy,0
+G09_Y4_207_223,SF,Emission lines for normal continuum,-,0
+G12_Y1_CND1_285,SF,Extra noise lines,Galaxy,0
+G09_Y1_FS1_089,SF,Few extra emission lines,Galaxy,0
+G02_Y4_029_209,SF,High and many emission lines,Seyfert 1,2
+G02_Y4_041_266,SF,High and many emission lines,-,0
+G02_Y4_043_105,SF,High and many emission lines,-,0
+G02_Y4_043_105,SF,High and many emission lines,Galaxy,0
+G02_Y5_114_257,SF,High and many emission lines,-,0
+G02_Y5_114_291,SF,High and many emission lines,-,0
+G02_Y6_004_067,SF,High and many emission lines,-,0
+G09_Y1_AS2_047,SF,High and many emission lines,Galaxy,0
+G09_Y1_BS1_271,SF,High and many emission lines,Galaxy,0
+G09_Y1_EN2_104,SF,High and many emission lines,HII Galaxy,9
+G09_Y1_EN2_256,SF,High and many emission lines,Galaxy,0
+G09_Y1_ES2_147,SF,High and many emission lines,Galaxy,0
+G09_Y1_FS1_037,SF,High and many emission lines,Galaxy,0
+G09_Y1_IS2_176,SF,High and many emission lines,Galaxy,0
+G09_Y2_042_055,SF,High and many emission lines,-,0
+G12_Y1_AS2_046,SF,High and many emission lines,Galaxy,0
+G12_Y1_CN1_102,SF,High and many emission lines,Galaxy,5
+G12_Y1_CS2_163,SF,High and many emission lines,Galaxy,0
+G12_Y1_DND1_283,SF,High and many emission lines,Galaxy,0
+G12_Y1_DX1_211,SF,High and many emission lines,Galaxy,0
+G12_Y1_FX1_031,SF,High and many emission lines,Galaxy,0
+G12_Y1_GN1_263,SF,High and many emission lines,Galaxy,0
+G12_Y1_HS2_086,SF,High and many emission lines,Galaxy,0
+G12_Y1_IS1_301,SF,High and many emission lines,Galaxy,0
+G12_Y1_IS2_193,SF,High and many emission lines,Galaxy,0
+G12_Y1_ND1_188,SF,High and many emission lines,HII Galaxy,12
+G12_Y3_014_242,SF,High and many emission lines,Galaxy,0
+G12_Y4_210_280,SF,High and many emission lines,-,0
+G12_Y6_060_295,SF,High and many emission lines,Galaxy,0
+G15_Y1_BS1_108,SF,High and many emission lines,Galaxy,0
+G15_Y1_CN1_059,SF,High and many emission lines,Galaxy,0
+G15_Y1_CN2_291,SF,High and many emission lines,Galaxy,0
+G15_Y1_CS1_149,SF,High and many emission lines,Galaxy,2
+G15_Y1_CX1_125,SF,High and many emission lines,Galaxy,0
+G15_Y1_DS2_286,SF,High and many emission lines,Galaxy,0
+G15_Y1_FS1_068,SF,High and many emission lines,Galaxy,1
+G15_Y1_FS1_102,SF,High and many emission lines,Galaxy,2
+G15_Y1_GX2_192,SF,High and many emission lines,Galaxy,0
+G15_Y1_IN1_030,SF,High and many emission lines,Galaxy,0
+G15_Y1_IN2_106,SF,High and many emission lines,Galaxy,0
+G15_Y2_001_254,SF,High and many emission lines,Galaxy,0
+G15_Y2_022_031,SF,High and many emission lines,Galaxy,0
+G15_Y3_005_049,SF,High and many emission lines,Galaxy,0
+G15_Y3_014_270,SF,High and many emission lines,Galaxy,0
+G15_Y3_021_322,SF,High and many emission lines,Galaxy,0
+G15_Y3_037_237,SF,High and many emission lines,-,0
+G15_Y4_214_347,SF,High and many emission lines,-,0
+G15_Y4_216_266,SF,High and many emission lines,-,0
+G15_Y4_224_130,SF,High and many emission lines,Galaxy,0
+G15_Y4_234_096,SF,High and many emission lines,-,0
+G15_Y5_003_334,SF,High and many emission lines,-,0
+G15_Y6_073_241,SF,High and many emission lines,-,0
+G15_Y6_073_391,SF,High and many emission lines,Galaxy,0
+G15_Y6_075_075,SF,High and many emission lines,Emission-line galaxy,1
+G15_Y6_088_271,SF,High and many emission lines,Emission-line galaxy,1
+G15_Y6_099_116,SF,High and many emission lines,-,0
+G15_Y6_100_125,SF,High and many emission lines,Galaxy,0
+G02_Y5_079_023,SF,High and many emission lines and bad splice,Galaxy,0
+G09_Y4_205_318,SF,High and many emission lines and bad splice,Galaxy,0
+G02_Y4_040_299,SF,High and many emission lines and fringing,-,0
+G09_Y1_FS2_387,SF,High and many emission lines and fringing,Galaxy,0
+G12_Y1_CN1_078,SF,"High and many emission lines, also blend",Galaxy,1
+G12_Y1_AN1_392,SF,High emission lines,Galaxy in Group,1
+G12_Y6_056_022,SF,High emission lines,Emission-line galaxy,1
+G15_Y1_CS1_112,SF,High emission lines,Galaxy,0
+G15_Y1_FS2_134,SF,High emission lines,Galaxy,0
+G15_Y3_050_003,SF,High emission lines and bad splice,Unknown,0
+G09_Y4_215_073,SF,High emission lines and blue,-,0
+G02_Y5_082_208,SF,High emission lines and extra sky line,-,0
+G15_Y1_GS1_095,SF,Many emission lines,Galaxy,0
+G15_Y6_088_096,SF,Many emission lines,Galaxy,0
+G02_Y4_021_114,SF,,HII Galaxy,30
+G09_Y4_251_217,SF,,Galaxy,0
+G12_Y1_AN1_102,SF,,Galaxy,0
+G15_Y3_005_049,SF,,Galaxy,0
+G15_Y6_100_221,SF,,Galaxy,0
