@@ -23,7 +23,7 @@ from functions import synthetic_data, labeller, merge_RF
 
 # Data paths
 PATH = "../data/arrays/"        # Data location
-NAME = "SPECS_107532_SN2_5"     # File name
+NAME = "SPECS_63893_SN5_3"     # File name
 
 # Processing variables
 N_PROC = 64                           # Processes (64 for norma4)

@@ -1,17 +1,8 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.utils import plot_model
-
-from sklearn.model_selection import train_test_split
-from sklearn.decomposition import PCA
 
 import tensorflow as tf
 physical_devices = tf.config.list_physical_devices('GPU')
 tf.config.experimental.set_memory_growth(physical_devices[0], True)
-
 
 from tensorflow.keras import backend as K
 from tensorflow.keras.models import Model, Sequential
@@ -61,10 +52,7 @@ class InfoVAE():
         self._init_vae()
         
     def _compute_kernel(self, x, y):
-        """Compute momentum of samples x and y via Gaussian kernels
-        
-        TBH I just copied this, needs more inspection
-        """
+        """Compute momentum of samples x and y via Gaussian kernels"""
         batch = K.shape(x)[0]
         
         tiled_x = K.tile(K.reshape(x, K.stack([batch, 1, self.latent_dim])), K.stack([1, batch, 1]))
@@ -85,11 +73,13 @@ class InfoVAE():
         # Encoding layers
         inputs = Input(shape=(self.input_dim,), name='raw_input')  
         h_encoder_0 = Dense(self.hidden_dim[0], activation='relu')(inputs)
-        h_encoder_1 = Dense(self.hidden_dim[1], activation='relu')(h_encoder_0)
+        
+        for l in self.hidden_dim[1:]:
+            h_encoder_0 = Dense(l, activation='relu')(h_encoder_0)
         
         # Latent layers
-        self.z_mean = Dense(self.latent_dim, name='z_mean')(h_encoder_1)
-        self.z_log_var = Dense(self.latent_dim, name='z_log_var')(h_encoder_1)
+        self.z_mean = Dense(self.latent_dim, name='z_mean')(h_encoder_0)
+        self.z_log_var = Dense(self.latent_dim, name='z_log_var')(h_encoder_0)
         
         # Sample distribution from latent layers
         self.z = Lambda(self._sampler)([self.z_mean, self.z_log_var])
@@ -98,38 +88,50 @@ class InfoVAE():
         self.encoder = Model(inputs, [self.z_mean, self.z_log_var, self.z], name='Encoder')
         
         # Define decoder model
-        self.decoder = Sequential([
-            Dense(self.hidden_dim[1], input_shape=(self.latent_dim,), activation='relu'),
-            Dense(self.hidden_dim[0], activation='relu'),
-            Dense(self.input_dim, activation='linear')], 
-            name='Decoder'
-        )
+        self.decoder = Sequential(name='Decoder')
+        self.decoder.add(Dense(self.hidden_dim[-1], input_shape=(self.latent_dim,), activation='relu'))
+        
+        for l in self.hidden_dim[1::-1]:
+            self.decoder.add(Dense(l, activation='relu'))
+        
+        self.decoder.add(Dense(self.input_dim, activation='linear'))
         
         # Define full VAE
         outputs = self.decoder(self.encoder(inputs)[2])
         self.vae = Model(inputs, outputs, name='vae')
         
         # Prepare optimizer
-        optimizer = Adam(clipnorm=1)
-        self.vae.compile(optimizer=optimizer, loss=self._loss, experimental_run_tf_function=False)
+        optimizer = Adam(learning_rate = 1e-4)#, clipnorm=0.01)
+        
+        self.vae.compile(optimizer=optimizer, 
+                         loss=self._loss, 
+                         metrics=[self._mse_loss, self._kld_loss, self._mmd_loss], 
+                         experimental_run_tf_function=False)
       
     def _loss(self, x_true, x_pred):
         """Returns loss function of the InfoVAE, uses multiple loss components
         to compute the total loss."""
         
-        """NEED TO TEST WEIGHTS ON LOSS VALUES TO MAKE SURE NOT JUST ONE DOMINATES!"""
-        
-        # Standard AE loss: binary crossentropy
-        loss = K.sum(mse(x_true, x_pred)) 
+        # Standard AE loss
+        loss = self._mse_loss(x_true, x_pred)
         
         # Standard VAE loss: KL Divergenve
-        KLD_loss = -0.5 * K.sum(1 + self.z_log_var - K.square(self.z_mean) - K.exp(self.z_log_var), axis=-1)
+        KLD_loss = self._kld_loss(x_true, x_pred)
         
         # Additional InfoVAE loss: MMD Divergence
-        normal_samples = K.random_normal(shape=(K.shape(self.z_mean)[0], self.latent_dim))
-        MMD_loss = self._compute_mmd(normal_samples, self.z) * self.latent_dim 
+        MMD_loss = self._mmd_loss(x_true, x_pred)
         
-        return loss + (1 - self.alpha) * KLD_loss + (self.lambd + self.alpha - 1) * MMD_loss 
+        return loss + (1 - self.alpha) * KLD_loss + (self.lambd + self.alpha - 1) * MMD_loss
+    
+    def _mse_loss(self, x_true, x_pred):
+        return K.sum(mse(x_true, x_pred))
+    
+    def _kld_loss(self, x_true, x_pred):
+        return -0.5 * K.sum(1 + self.z_log_var - K.square(self.z_mean) - K.exp(self.z_log_var), axis=-1)
+    
+    def _mmd_loss(self, x_true, x_pred):
+        normal_samples = K.random_normal(shape=(K.shape(self.z_mean)[0], self.latent_dim))
+        return self._compute_mmd(normal_samples, self.z)# * self.latent_dim * K.cast(K.shape(self.z)[0], 'float32')
         
     def _sampler(self, latent_layers):
         """Sample a distribution from the latent space variables, also
@@ -162,16 +164,49 @@ class InfoVAE():
         return self.encoder.predict(*args, **kwargs)
     
     def fit(self, *args, **kwargs):
+        """Hier weights opvangen?"""
         return self.vae.fit(*args, **kwargs)
     
     def predict(self, *args, **kwargs):
         return self.vae.predict(*args, **kwargs)
+
+     
+if __name__ == "__main__":
+
+    # Load data
+    data = np.memmap("SPECS_63839_SN5_5_8000.array.array", mode='r', dtype='float16', shape=(63839, 8000))
+    specids = np.genfromtxt("SPECS_63839_SN5_5_8000.txt", unpack=True, dtype='str')
     
-    def save_weights(self, *args, **kwargs):
-        self.vae.save_weights(*args, **kwargs)
-        
-    def load_weights(self, *args, **kwargs):
-        self.vae.load_weights(*args, **kwargs)
-        
-    def summary(self):
-        return self.vae.summary()
+    # Split data
+    original_dim = data.shape[1]
+    x_train, x_test = train_test_split(data, test_size=0.1)
+
+    # Network parameters
+    hidden_dim = [1000, 500, 100]
+    latent_dim = 6
+    alpha = 0
+    lambd = 10
+
+    infoVAE = InfoVAE(original_dim,
+                      hidden_dim,
+                      latent_dim,
+                      alpha=alpha,
+                      lambd=lambd)
+                      
+    # Train network
+    batch_size = 2048
+    epochs = 1000
+    es = EarlyStopping(patience=30, verbose=1)
+    
+    history = infoVAE.fit(x_train, x_train,
+                      shuffle=True,
+                      batch_size=batch_size,
+                      epochs=epochs,
+                      validation_data=(x_test, x_test),
+                      callbacks=[es],
+                      use_multiprocessing=True)
+                      
+    # Save model parameters
+    infoVAE.encoder.save_weights("encoder.h5")
+    infoVAE.decoder.save_weights("decoder.h5")
+    infoVAE.vae.save_weights("vae.h5")
